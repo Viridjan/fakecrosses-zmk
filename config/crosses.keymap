@@ -9,7 +9,6 @@
 };
 
 / {
-
     behaviors {
         kp_cs: SYM_comma_semi {
             compatible = "zmk,behavior-mod-morph";
@@ -35,21 +34,21 @@
 
         lclk {
             bindings = <&mkp LCLK>;
-            key-positions = <1 2>;
+            key-positions = <16 17>;
             layers = <0>;
         };
 
         rclk {
             bindings = <&mkp RCLK>;
-            key-positions = <1 2>;
+            key-positions = <17 18>;
             layers = <0>;
         };
 
         mclk {
             bindings = <&mkp MCLK>;
-            key-positions = <1 2>;
+            key-positions = <18 19>;
             layers = <0>;
-       };
+        };
     };
 
     keymap {
@@ -57,45 +56,45 @@
 
         base {
             bindings = <
-&kp Q        &kp W       &kp E        &kp R         &kp T          &kp Y          &kp U          &kp I          &kp O       &kp P
-&mt LMETA A  &mt LALT S  &mt LCTRL D  &mt LSHIFT F  &kp G          &kp H          &mt RSHIFT J   &mt RALT K     &mt RALT L  &mt RGUI APOS
-&lt 3 GRAVE  &kp Z       &kp X        &kp C         &kp V          &kp B          &kp N          &kp M          &kp COMMA   &lt 3 DOT
-                         &none        &mo 1         &none    &mt RET SPACE  &kp BACKSPACE  &none
+&kp Q        &kp W       &kp E        &kp R         &kp T                          &kp Y          &kp U         &kp I       &kp O       &kp P
+&mt LMETA A  &mt LALT S  &mt LCTRL D  &mt LSHIFT F  &kp G                          &kp H          &mt RSHIFT J  &mt RALT K  &mt RALT L  &mt RGUI APOS
+&kp GRAVE    &kp Z       &kp X        &kp C         &kp V                          &kp B          &kp N         &kp M       &kp_cs      &kp_pc
+                                      &none         &mo 1  &none    &mt RET SPACE  &kp BACKSPACE  &none
             >;
         };
 
         num-fn {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &none   &kp N7  &kp N8  &kp N9  &kp MINUS
-&kp F6  &kp F7  &kp F8  &kp F9   &kp F10    &none   &kp N4  &kp N5  &kp N6  &kp N0
-&none   &none   &none   &kp F11  &kp F12    &none   &kp N1  &kp N2  &kp N3  &kp EQUAL
-                &trans  &trans   &trans     &trans  &trans  &trans
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &none   &kp N7  &kp N8  &kp N9  &kp MINUS
+&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                    &none   &kp N4  &kp N5  &kp N6  &kp N0
+&none   &none   &none   &kp F11  &kp F12                    &none   &kp N1  &kp N2  &kp N3  &kp EQUAL
+                        &trans   &trans   &trans    &trans  &trans  &trans
             >;
         };
 
         other {
             bindings = <
-&none         &none       &none     &none     &none     &none      &kp HOME  &kp PG_DN      &kp PG_UP   &kp END
-&none         &none       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &none     &kp C_PLAY     &kp C_PREV  &kp C_VOL_DN
-&kp C_VOL_UP  &kp C_NEXT  &trans    &trans    &trans    &trans     &trans    &kp RIGHT_ALT
+&none         &none       &none     &none     &none         &none      &kp HOME  &kp PG_DN      &kp PG_UP   &kp END
+&none         &none       &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT  &none     &kp C_PLAY     &kp C_PREV  &kp C_VOL_DN
+&kp C_VOL_UP  &kp C_NEXT  &trans    &trans    &trans        &trans     &trans    &kp RIGHT_ALT
             >;
         };
 
         mouse-misc {
             bindings = <
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none    &none  &none  &none  &none  &none
-              &none  &none  &none    &none  &none  &none
+&none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none                  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
         };
 
         game {
             bindings = <
-&kp Q      &kp W  &kp E      &kp R  &kp T          &kp Y        &kp U          &kp I          &kp O      &kp P
-&kp A      &kp S  &kp D      &kp F  &kp G          &kp H        &kp J          &kp K          &kp L      &kp APOS
-&kp GRAVE  &kp Z  &kp X      &kp C  &kp V          &kp B        &kp N          &kp M          &kp COMMA  &lt 3 DOT
-                  &kp LCTRL  &mo 1  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp RIGHT_ALT
+&kp Q      &kp W  &kp E  &kp R      &kp T                              &kp Y          &kp U          &kp I  &kp O      &kp P
+&kp A      &kp S  &kp D  &kp F      &kp G                              &kp H          &kp J          &kp K  &kp L      &kp APOS
+&kp GRAVE  &kp Z  &kp X  &kp C      &kp V                              &kp B          &kp N          &kp M  &kp COMMA  &lt 3 DOT
+                         &kp LCTRL  &mo 1  &lt 1 SPACE    &lt 2 ENTER  &kp BACKSPACE  &kp RIGHT_ALT
             >;
         };
     };
