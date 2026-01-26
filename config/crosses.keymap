@@ -33,7 +33,7 @@
 
         other {
             bindings = <
-&kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LS(N4)      &kp LS(LEFT_BRACKET)    &none       &none       &kp PG_DN      &kp PG_UP     &none
+&kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LS(N4)      &kp LS(LEFT_BRACKET)    &none       &kp HOME    &kp PG_DN      &kp PG_UP     &kp END
 &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &kp LS(N8)      &kp LS(SEMICOLON)       &none       &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT
 &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)  &kp LS(EQUAL)   &kp LS(BACKSLASH)       &kp C_PLAY  &kp C_PREV  &kp C_VOL_DN   &kp C_VOL_UP  &kp C_NEXT
                         &kp LCTRL      &kp LEFT_SHIFT  &kp SPACE               &trans      &trans      &kp RIGHT_ALT
