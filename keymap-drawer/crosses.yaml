@@ -32,10 +32,10 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - TAB
-  - num-fn
-  - SPACE
-  - RET
-  - other
+  - {t: SPACE, h: num-fn}
+  - ''
+  - ''
+  - {t: RET, h: other}
   - ''
   num-fn:
   - F1
