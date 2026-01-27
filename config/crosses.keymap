@@ -1,4 +1,4 @@
-#include <behaviors.dtsi>
+ui#include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -14,23 +14,7 @@
 
 / {
     behaviors {
-        kp_cs: SYM_comma_semi {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_SEMI";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        kp_pc: SYM_period_colon {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_COL";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+        #include "composite_keys.dtsi"
     };
 
     combos {
