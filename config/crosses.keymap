@@ -13,6 +13,7 @@ ui#include <behaviors.dtsi>
     quick-tap-ms = <150>;
 };
 
+/{
 combos {
     compatible = "zmk,combos";
 
@@ -34,7 +35,7 @@ combos {
         layers = <0>;
     };
 };
-/{
+
     keymap {
         compatible = "zmk,keymap";
 
