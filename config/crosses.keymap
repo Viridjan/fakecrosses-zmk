@@ -50,6 +50,7 @@
             layers = <0>;
         };
     };
+#include "homerow.dtsi"
 
     keymap {
         compatible = "zmk,keymap";
