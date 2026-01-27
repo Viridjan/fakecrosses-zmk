@@ -14,28 +14,6 @@
 /* Timerless Home Row Mods */
 /* https://github.com/urob/zmk-config#timeless-homerow-mods */
 
-/* left-hand HRMs */
-ZMK_HOLD_TAP(hml,
-    flavor = "tap-preferred";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    global-quick-tap;
-    bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <KEYS_R THUMBS>;
-    hold-trigger-on-release;
-)
-
-/* right-hand HRMs */
-ZMK_HOLD_TAP(hmr,
-    flavor = "tap-preferred";
-    tapping-term-ms = <280>;
-    quick-tap-ms = <175>;
-    global-quick-tap;
-    bindings = <&kp>, <&kp>;
-    hold-trigger-key-positions = <KEYS_L THUMBS>;
-    hold-trigger-on-release;
-)
-
 &lt {
     tapping-term-ms = <200>;
     flavor = "balanced";
@@ -43,6 +21,16 @@ ZMK_HOLD_TAP(hmr,
 };
 
     behaviors {
+        hml: homerow_left {
+            flavor = "tap-preferred";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
+        };
+
         kp_cs: SYM_comma_semi {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_SEMI";
