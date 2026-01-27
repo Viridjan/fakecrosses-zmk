@@ -19,7 +19,7 @@ layers:
   - H
   - {t: J, h: LSHIFT}
   - {t: K, h: LGUI}
-  - {t: K, h: LALT}
+  - {t: L, h: LALT}
   - {t: '''', h: LCTRL}
   - '`'
   - Z
