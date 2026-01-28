@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #include <zmk-helpers/helper.h> // Requires zmk-helpers module.
+#include "zmk-helpers/key-labels/36.h"
 
 &lt {
     tapping-term-ms = <200>;
