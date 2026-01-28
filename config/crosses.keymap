@@ -15,7 +15,6 @@
             label = "COMMA_SEMI";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMI>;
-
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -24,7 +23,6 @@
             label = "DOT_COL";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp COLON>;
-
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
