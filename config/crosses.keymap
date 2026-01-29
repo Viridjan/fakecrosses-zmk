@@ -128,19 +128,19 @@
 
         lclk {
             bindings = <&mkp LCLK>;
-            key-positions = <RT1 RT2>;
+            key-positions = <6 7>;
             layers = <BASE>;
         };
 
         rclk {
             bindings = <&mkp RCLK>;
-            key-positions = <RT2 RT3>;
+            key-positions = <7 8>;
             layers = <BASE>;
         };
 
         mclk {
             bindings = <&mkp MCLK>;
-            key-positions = <RT3 RT4>;
+            key-positions = <8 9>;
             layers = <BASE>;
         };
     };
