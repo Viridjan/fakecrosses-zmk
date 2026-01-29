@@ -119,7 +119,7 @@
     };
 
     combos {
-        compatible = "zmk,combos,keymap";
+        compatible = "zmk,combos";
 
         lclk {
             bindings = <&mkp LCLK>;
