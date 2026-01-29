@@ -11,17 +11,17 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: LCTRL}
-  - {t: S, h: LALT}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: LGUI}
-  - {t: F, h: LSHIFT}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
-  - {t: J, h: LSHIFT}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: LGUI}
-  - {t: L, h: LALT}
-  - {t: '''', h: LCTRL}
-  - '`'
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
+  - {t: '`', s: '~'}
   - Z
   - X
   - C
@@ -31,131 +31,167 @@ layers:
   - M
   - {t: ',', s: ;}
   - {t: ., s: ':'}
-  - TAB
-  - {t: SPACE, h: num-fn}
-  - ''
-  - ''
-  - {t: RET, h: other}
-  - '&td0'
-  num-fn:
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-space$$', h: lower}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-return$$', h: raise}
+  - '&td_0'
+  lower:
   - F1
   - F2
   - F3
   - F4
   - F5
-  - ''
-  - '7'
-  - '8'
-  - '9'
-  - '-'
-  - {t: F6, h: LCTRL}
-  - {t: F7, h: LALT}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '-', s: _}
+  - {t: F6, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F7, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F8, h: LGUI}
-  - {t: F9, h: LSHIFT}
+  - {t: F9, h: '$$mdi:apple-keyboard-shift$$'}
   - F10
-  - ''
-  - {t: '4', h: LSHIFT}
-  - {t: '5', h: LGUI}
-  - {t: '6', h: LALT}
-  - {t: '0', h: LCTRL}
-  - ESC
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '4', h: '$$mdi:apple-keyboard-shift$$', s: $}
+  - {t: '5', h: LGUI, s: '%'}
+  - {t: '6', h: '$$mdi:apple-keyboard-option$$', s: ^}
+  - {t: '0', h: '$$mdi:apple-keyboard-control$$', s: )}
+  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F11
   - F12
-  - ''
-  - '1'
-  - '2'
-  - '3'
-  - '='
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RET
-  - {t: ▽, type: trans}
-  other:
-  - PSCRN
-  - ''
-  - ''
-  - ''
-  - ''
-  - BSPC
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
+  raise:
+  - $$mdi:printer-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - HOME
   - PG DN
   - PG UP
-  - DELETE
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - ESC
-  - ''
-  - ''
-  - ''
-  - ''
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: /, s: \}
+  - {t: '!', s: '?'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PLAY
-  - PREV
-  - VOL DN
-  - VOL UP
-  - NEXT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  game: [Q, W, E, R, T, Y, U, I, O, P, A, S, D, F, G, H, J, K, L, '''', LCTRL, Z, X, C, V, B, N, M, ',', ., TAB, game-num-fn, SPACE, RET, '', '&td1']
-  game-num-fn:
+  - $$mdi:skip-previous$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-next$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  game:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - .
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - $$mdi:keyboard-tab$$
+  - lower_game
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&td_1'
+  lower_game:
   - F1
   - F2
   - F3
   - F4
   - F5
-  - ''
-  - '7'
-  - '8'
-  - '9'
-  - '-'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '-', s: _}
   - F6
   - F7
   - F8
   - F9
   - F10
-  - ''
-  - '4'
-  - '5'
-  - '6'
-  - '0'
-  - ESC
-  - ''
-  - ''
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '0', s: )}
+  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F11
   - F12
-  - ''
-  - '1'
-  - '2'
-  - '3'
-  - '='
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [6, 7]
-  k: '&mkp LCLK'
+  k: $$mdi:mouse-left-click-outline$$
   l: [base]
 - p: [7, 8]
-  k: '&mkp RCLK'
+  k: $$mdi:mouse-right-click-outline$$
   l: [base]
 - p: [8, 9]
-  k: '&mkp MCLK'
+  k: $$mdi:mouse-scroll-wheel$$
   l: [base]
