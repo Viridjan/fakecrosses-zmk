@@ -7,7 +7,6 @@
 #include <zmk-helpers/helper.h> // Requires zmk-helpers module.
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 #include "zmk-helpers/key-labels/36.h"
 
 &lt {
@@ -151,9 +150,9 @@
 
         base {
             bindings = <
-&kp Q         &kp W        &kp E        &kp R          &kp T                        &kp Y      &kp U          &kp I        &kp O        &kp P
-&hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHIFT F  &kp G                        &kp H      &hmr LSHIFT J  &hmr LGUI K  &hmr LALT L  &hmr LCTRL SQT
-&kp GRAVE     &kp Z        &kp X        &kp C          &kp V                        &kp B      &kp N          &kp M        &kp_cs       &kp_pc
+&kp Q         &kp W        &kp E        &kp R          &kp T                            &kp Y          &kp U          &kp I        &kp O        &kp P
+&hml LCTRL A  &hml LALT S  &hml LGUI D  &hml LSHIFT F  &kp G                            &kp H          &hmr LSHIFT J  &hmr LGUI K  &hmr LALT L  &hmr LCTRL SQT
+&kp GRAVE     &kp Z        &kp X        &kp C          &kp V                            &kp B          &kp N          &kp M        &kp_cs       &kp_pc
                                         &kp TAB        &lt LOWER SPACE  &none    &none  &lt RAISE RET  &td_game
             >;
         };
@@ -169,19 +168,19 @@
 
         raise {
             bindings = <
-&kp PSCRN  &none   &kp LBKT  &kp RBKT  &none                     &kp BSPC    &kp HOME    &kp PG_DN     &kp PG_UP     &kp DELETE
+&kp PSCRN  &none  &kp LBKT  &kp RBKT  &none                     &kp BSPC    &kp HOME    &kp PG_DN     &kp PG_UP     &kp DELETE
 &none      &none  &kp_bL    &kp_bR    &none                     &none       &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
-&kp ESC    &none  &kp_slsh  &kp_eq   &none                     &kp C_PLAY  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
-                         &trans  &trans  &trans    &trans  &none       &trans
+&kp ESC    &none  &kp_slsh  &kp_eq    &none                     &kp C_PLAY  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
+                            &trans    &trans  &trans    &trans  &none       &trans
             >;
         };
 
         game {
             bindings = <
-&kp Q      &kp W  &kp E  &kp R    &kp T                        &kp Y  &kp U  &kp I  &kp O      &kp P
-&kp A      &kp S  &kp D  &kp F    &kp G                        &kp H  &kp J  &kp K  &kp L      &kp APOS
-&kp LCTRL  &kp Z  &kp X  &kp C    &kp V                        &kp B  &kp N  &kp M  &kp COMMA  &kp DOT
-                         &kp TAB  &mo LOW_G  &kp SPACE    &kp RET  &none  &td_std
+&kp Q      &kp W  &kp E  &kp R    &kp T                            &kp Y   &kp U    &kp I  &kp O      &kp P
+&kp A      &kp S  &kp D  &kp F    &kp G                            &kp H   &kp J    &kp K  &kp L      &kp APOS
+&kp LCTRL  &kp Z  &kp X  &kp C    &kp V                            &kp B   &kp N    &kp M  &kp COMMA  &kp DOT
+                         &kp TAB  &mo LOW_G  &kp SPACE    &kp RET  &trans  &td_std
             >;
         };
 
