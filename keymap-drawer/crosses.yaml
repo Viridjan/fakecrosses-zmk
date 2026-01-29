@@ -32,10 +32,10 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:keyboard-space$$', h: lower}
+  - lower
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-return$$', h: raise}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-space$$', h: raise}
   - '&td_0'
   lower:
   - F1
@@ -85,10 +85,10 @@ layers:
   - PG DN
   - PG UP
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: /, s: \}
   - {t: (, s: <}
   - {t: ), s: '>'}
+  - {t: '!', s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
@@ -97,8 +97,8 @@ layers:
   - $$mdi:arrow-right-bold$$
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: /, s: \}
-  - {t: '!', s: '?'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PLAY
   - $$mdi:skip-previous$$
@@ -180,7 +180,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
