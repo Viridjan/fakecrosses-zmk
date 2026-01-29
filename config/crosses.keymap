@@ -41,18 +41,11 @@
             hold-trigger-on-release;
         };
 
-        td0: tap_dance_ {
+        td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = < >, <&to 3>, < >;
-        };
-
-        td1: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = < >, <&to 0>, < >;
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
         };
 
         kp_cs: SYM_comma_semi {
