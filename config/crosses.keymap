@@ -125,28 +125,28 @@ ZMK_HOLD_TAP(hmr,
 
         base {
             bindings = <
-AS(Q)        &kp W        &kp E         &kp R          &kp T                        &kp Y            &kp U          &kp I         &kp O        &kp P
-HML_GUI(A)  HML_ALT(S)  HML_CTRL(D)  HML_SHIFT(F)  &kp G                        &kp H            HMR_SHIFT(J)  HMR_CTRL(K)  HMR_ALT(L)  HMR_GUI(SQT)
-&kp GRAVE    &kp Z        &kp X         &kp C          &kp V                        &kp B            &kp N          &kp M         &kp_cs       &kp_pc
-                                        &kp TAB        &mo LOWER  XXX    &kp RET  &lt RAISE SPACE  &td_game
+AS(Q)       &kp W       &kp E        &kp R      &kp T                      &kp Y            &kp U      &kp I        &kp O       &kp P
+HML_GUI(A)  HML_ALT(S)  HML_CTRL(D)  HML_SH(F)  &kp G                      &kp H            HMR_SH(J)  HMR_CTRL(K)  HMR_ALT(L)  HMR_GUI(SQT)
+&kp GRAVE   &kp Z       &kp X        &kp C      &kp V                      &kp B            &kp N      &kp M        &kp_cs      &kp_pc
+                                     &kp TAB    &mo LOWER  XXX    &kp RET  &lt RAISE SPACE  &td_game
             >;
         };
 
         lower {
             bindings = <
-&kp F1        &kp F2        &kp F3         &kp F4          &kp F5                     &kp EXCL      &kp N7          &kp N8         &kp N9        &kp MINUS
-&hml LGUI F6  &hml LALT F7  &hml LCTRL F8  &hml LSHIFT F9  &kp F10                    &kp QUESTION  &hmr LSHIFT N4  &hmr LCTRL N5  &hmr LALT N6  &hmr LGUI N0
-&kp ESC       XXX         XXX          &kp F11         &kp F12                    XXX         &kp N1          &kp N2         &kp N3        &kp EQUAL
-                                           ___          XXX    ___    ___  &kp RET       ___
+&kp F1       &kp F2       &kp F3        &kp F4      &kp F5               &kp EXCL   &kp N7      &kp N8        &kp N9       &kp MINUS
+HML_GUI(F6)  HML_ALT(F7)  HML_CTRL(F8)  HML_SH(F9)  &kp F10              &kp QMARK  HMR_SH(N4)  HMR_CTRL(N5)  HMR_ALT(N6)  HMR_GUI(N0)
+&kp ESC      XXX          XXX           &kp F11     &kp F12              XXX        &kp N1      &kp N2        &kp N3       &kp EQUAL
+                                        ___         XXX      ___    ___  &kp RET    ___
             >;
         };
 
         raise {
             bindings = <
-&kp PSCRN  &kp LBRC  &kp LT    &kp GT    &kp RBRC                    &kp BSPC    &kp HOME    &kp PG_DN     &kp PG_UP     &kp DELETE
-XXX      &kp LBKT  &kp LPAR  &kp RPAR  &kp RBKT                    XXX       &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
-&kp ESC    XXX     &kp FSLH  &kp BSLH  &kp PIPE                    &kp C_PLAY  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
-                               ___       ___       ___  ___          ___  &none       ___
+&kp PSCRN  &kp LBRC  &kp LT    &kp GT    &kp RBRC              &kp BSPC    &kp HOME    &kp PG_DN     &kp PG_UP     &kp DELETE
+XXX        &kp LBKT  &kp LPAR  &kp RPAR  &kp RBKT              XXX         &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
+&kp ESC    XXX       &kp FSLH  &kp BSLH  &kp PIPE              &kp C_PLAY  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
+                               ___       ___       ___    ___  ___         XXX         ___
             >;
         };
 
@@ -161,10 +161,10 @@ XXX      &kp LBKT  &kp LPAR  &kp RPAR  &kp RBKT                    XXX       &kp
 
         lower_game {
             bindings = <
-&kp F1   &kp F2    &kp F3  &kp F4   &kp F5                   XXX   &kp N7  &kp N8  &kp N9  &kp MINUS
-&kp F6   &kp F7    &kp F8  &kp F9   &kp F10                  XXX   &kp N4  &kp N5  &kp N6  &kp N0
-&kp ESC  &kp LALT  XXX   &kp F11  &kp F12                    XXX   &kp N1  &kp N2  &kp N3  &kp EQUAL
-                           ___  ___  ___  ___  ___  ___
+&kp F1   &kp F2    &kp F3  &kp F4   &kp F5               XXX  &kp N7  &kp N8  &kp N9  &kp MINUS
+&kp F6   &kp F7    &kp F8  &kp F9   &kp F10              XXX  &kp N4  &kp N5  &kp N6  &kp N0
+&kp ESC  &kp LALT  XXX     &kp F11  &kp F12              XXX  &kp N1  &kp N2  &kp N3  &kp EQUAL
+                           ___      ___      ___    ___  ___  ___
             >;
         };
     };
