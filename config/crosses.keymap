@@ -68,12 +68,17 @@ ZMK_HOLD_TAP(hmr,
 #define COMBO_IDLE_FAST 150
 #define COMBO_IDLE_SLOW 50
 
-MK_COMBO(lclk,    &mkp LCLK,    RT1 RT2,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
-MK_COMBO(rclk,    &mkp RCLK,    RT2 RT3,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
-MK_COMBO(mclk,    &mkp MCLK,    RT3 RT4,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+// Hack: Make HRM combos tap-only (cf, ZMK issue #544).
+#define ZMK_COMBO_8(NAME, TAP, POS, LAYERS, COMBO_MS, IDLE_MS, HOLD, SIDE)     \
+  MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS)                             \
+  ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
 
-MK_COMBO(esc,     &kp BSPC,     LT4 LT3,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
-MK_COMBO(del,     &kp DEL,      LT3 LT2,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+ZMK_COMBO(lclk,    &mkp LCLK,    RT1 RT2,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+ZMK_COMBO(rclk,    &mkp RCLK,    RT2 RT3,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+ZMK_COMBO(mclk,    &mkp MCLK,    RT3 RT4,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+
+ZMK_COMBO(esc,     &kp BSPC,     LT4 LT3,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+ZMK_COMBO(del,     &kp DEL,      LT3 LT2,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
 
 / {
     behaviors {
