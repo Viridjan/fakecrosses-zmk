@@ -79,8 +79,6 @@ ZMK_COMBO(lclk,    &mkp LCLK,    RT1 RT2,     BASE,    COMBO_TERM_FAST,    COMBO
 ZMK_COMBO(rclk,    &mkp RCLK,    RT2 RT3,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
 ZMK_COMBO(mclk,    &mkp MCLK,    RT3 RT4,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
 
-ZMK_COMBO(escx,     &kp ESC,      LT5 LT4,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
-ZMK_COMBO(delx,     &kp BSPC,     LT4 LT3,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
 ZMK_COMBO(canc,    &kp DEL,      LT3 LT2,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
 
 / {
