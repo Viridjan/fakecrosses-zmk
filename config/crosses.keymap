@@ -120,10 +120,10 @@
 
         base {
             bindings = <
-AS(Q)        AS(W)        AS(E)         AS(R)          AS(T)                        AS(Y)            AS(U)          AS(I)         AS(O)        AS(P)
-&hml LGUI AS(A)  &hml LALT AS(S)  &hml LCTRL AS(D)  &hml LSHIFT AS(F)  AS(G)                        AS(H)            &hmr LSHIFT AS(J)  &hmr LCTRL AS(K)  &hmr LALT AS(L)  &hmr LGUI AS(SQT)
-AS(GRAVE)    AS(Z)        AS(X)         AS(C)          AS(V)                        AS(B)            AS(N)          AS(M)         &kp_cs       &kp_pc
-                                        AS(TAB)        &mo LOWER  &none    &kp RET  &lt RAISE SPACE  &td_game
+&kp Q        &kp W        &kp E         &kp R          &kp T                        &kp Y            &kp U          &kp I         &kp O        &kp P
+&hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHIFT F  &kp G                        &kp H            &hmr LSHIFT J  &hmr LCTRL K  &hmr LALT L  &hmr LGUI SQT
+&kp GRAVE    &kp Z        &kp X         &kp C          &kp V                        &kp B            &kp N          &kp M         &kp_cs       &kp_pc
+                                        &kp TAB        &mo LOWER  &none    &kp RET  &lt RAISE SPACE  &td_game
             >;
         };
 
