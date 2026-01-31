@@ -46,7 +46,7 @@ ZMK_HOLD_TAP(hml,
 #define HML_GUI(keycode) &hml LGUI keycode
 #define HML_ALT(keycode) &hml LALT keycode
 #define HML_CTRL(keycode) &hml LCTRL keycode
-#define HML_SHIFT(keycode) &hml LSHIFT keycode
+#define HML_SH(keycode) &hml LSHIFT keycode
 ZMK_HOLD_TAP(hmr,
     flavor = "balanced";
     tapping-term-ms = <350>;
@@ -59,7 +59,7 @@ ZMK_HOLD_TAP(hmr,
 #define HMR_GUI(keycode) &hmr LGUI keycode
 #define HMR_ALT(keycode) &hmr LALT keycode
 #define HMR_CTRL(keycode) &hmr LCTRL keycode
-#define HMR_SHIFT(keycode) &hmr LSHIFT keycode
+#define HMR_SH(keycode) &hmr LSHIFT keycode
 
 / {
     behaviors {
