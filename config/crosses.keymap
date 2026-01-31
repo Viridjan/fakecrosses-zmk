@@ -34,11 +34,6 @@
 #define THUMBS    LH2 LH1 LH0    RH2 RH1 RH0
 
 
-#define COMBO_TERM_FAST 18
-#define COMBO_TERM_SLOW 30
-#define COMBO_IDLE_FAST 150
-#define COMBO_IDLE_SLOW 50
-
 #define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS)                                 \
   ZMK_HOLD_TAP(NAME, bindings = <HOLD>, <TAP>; flavor = "balanced";            \
                tapping-term-ms = <280>; quick-tap-ms = <175>;         \
@@ -62,6 +57,12 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
 #define ZMK_COMBO_8(NAME, TAP, POS, LAYERS, COMBO_MS, IDLE_MS, HOLD, SIDE)     \
   MAKE_HRM(hm_combo_##NAME, &kp, TAP, SIDE THUMBS)                             \
   ZMK_COMBO_6(NAME, &hm_combo_##NAME HOLD 0, POS, LAYERS, COMBO_MS, IDLE_MS)
+
+
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
 
 ZMK_COMBO(lclk,    &mkp LCLK,    RT1 RT2,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
 ZMK_COMBO(rclk,    &mkp RCLK,    RT2 RT3,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
