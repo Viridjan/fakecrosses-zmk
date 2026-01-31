@@ -33,7 +33,7 @@
 #define KEYS_R    RT4 RT3 RT2 RT1 RT0    RM4 RM3 RM2 RM1 RM0    RB4 RB3 RB2 RB1 RB0
 #define THUMBS    LH2 LH1 LH0    RH2 RH1 RH0
 
-/* HomeRow Mods */
+/*        HomeRow Mods        */
 ZMK_HOLD_TAP(hml,
     flavor = "balanced";
     tapping-term-ms = <350>;
@@ -43,10 +43,11 @@ ZMK_HOLD_TAP(hml,
     hold-trigger-key-positions = <KEYS_R THUMBS>;
     hold-trigger-on-release;
 )
-#define HML_GUI(keycode) &hml LGUI keycode
-#define HML_ALT(keycode) &hml LALT keycode
-#define HML_CTRL(keycode) &hml LCTRL keycode
-#define HML_SH(keycode) &hml LSHIFT keycode
+#define HML_G(keycode) &hml LGUI keycode
+#define HML_A(keycode) &hml LALT keycode
+#define HML_C(keycode) &hml LCTRL keycode
+#define HML_S(keycode) &hml LSHIFT keycode
+
 ZMK_HOLD_TAP(hmr,
     flavor = "balanced";
     tapping-term-ms = <350>;
@@ -56,10 +57,23 @@ ZMK_HOLD_TAP(hmr,
     hold-trigger-key-positions = <KEYS_L THUMBS>;
     hold-trigger-on-release;
 )
-#define HMR_GUI(keycode) &hmr LGUI keycode
-#define HMR_ALT(keycode) &hmr LALT keycode
-#define HMR_CTRL(keycode) &hmr LCTRL keycode
-#define HMR_SH(keycode) &hmr LSHIFT keycode
+#define HMR_G(keycode) &hmr LGUI keycode
+#define HMR_A(keycode) &hmr LALT keycode
+#define HMR_C(keycode) &hmr LCTRL keycode
+#define HMR_S(keycode) &hmr LSHIFT keycode
+
+/*        Combos        */
+#define COMBO_TERM_FAST 18
+#define COMBO_TERM_SLOW 30
+#define COMBO_IDLE_FAST 150
+#define COMBO_IDLE_SLOW 50
+
+MK_COMBO(lclk,    &mkp LCLK,    RT1 RT2,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+MK_COMBO(rclk,    &mkp RCLK,    RT2 RT3,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+MK_COMBO(mclk,    &mkp MCLK,    RT3 RT4,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+
+MK_COMBO(esc,     &kp BSPC,     LT4 LT3,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
+MK_COMBO(del,     &kp DEL,      LT3 LT2,     BASE,    COMBO_TERM_FAST,    COMBO_IDLE_FAST)
 
 / {
     behaviors {
@@ -98,52 +112,30 @@ ZMK_HOLD_TAP(hmr,
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        lclk {
-            bindings = <&mkp LCLK>;
-            key-positions = < 6 7 >;
-            layers = < 0 >;
-        };
-
-        rclk {
-            bindings = <&mkp RCLK>;
-            key-positions = < 7 8 >;
-            layers = < 0 >;
-        };
-
-        mclk {
-            bindings = <&mkp MCLK>;
-            key-positions = < 8 9 >;
-            layers = < 0 >;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-AS(Q)       &kp W       &kp E        &kp R      &kp T                      &kp Y            &kp U      &kp I        &kp O       &kp P
-HML_GUI(A)  HML_ALT(S)  HML_CTRL(D)  HML_SH(F)  &kp G                      &kp H            HMR_SH(J)  HMR_CTRL(K)  HMR_ALT(L)  HMR_GUI(SQT)
-&kp GRAVE   &kp Z       &kp X        &kp C      &kp V                      &kp B            &kp N      &kp M        &kp_cs      &kp_pc
-                                     &kp TAB    &mo LOWER  XXX    &kp RET  &lt RAISE SPACE  &td_game
+AS(Q)      &kp W     &kp E     &kp R     &kp T                      &kp Y            &kp U     &kp I     &kp O     &kp P
+HML_C(A)   HML_A(S)  HML_G(D)  HML_S(F)  &kp G                      &kp H            HMR_S(J)  HMR_G(K)  HMR_A(L)  HMR_C(SQT)
+&kp GRAVE  &kp Z     &kp X     &kp C     &kp V                      &kp B            &kp N     &kp M     &kp_cs    &kp_pc
+                               &kp TAB   &mo LOWER  XXX    &kp RET  &lt RAISE SPACE  &td_game
             >;
         };
 
         lower {
             bindings = <
-&kp F1       &kp F2       &kp F3        &kp F4      &kp F5               &kp EXCL   &kp N7      &kp N8        &kp N9       &kp MINUS
-HML_GUI(F6)  HML_ALT(F7)  HML_CTRL(F8)  HML_SH(F9)  &kp F10              &kp QMARK  HMR_SH(N4)  HMR_CTRL(N5)  HMR_ALT(N6)  HMR_GUI(N0)
-&kp ESC      XXX          XXX           &kp F11     &kp F12              XXX        &kp N1      &kp N2        &kp N3       &kp EQUAL
-                                        ___         XXX      ___    ___  &kp RET    ___
+&kp F1     &kp F2     &kp F3     &kp F4     &kp F5               &kp EXCL   &kp N7     &kp N8     &kp N9     &kp MINUS
+HML_C(F6)  HML_A(F7)  HML_G(F8)  HML_S(F9)  &kp F10              &kp QMARK  HMR_S(N4)  HMR_G(N5)  HMR_A(N6)  HMR_C(N0)
+&kp ESC    XXX        XXX        &kp F11    &kp F12              XXX        &kp N1     &kp N2     &kp N3     &kp EQUAL
+                                 ___        XXX      ___    ___  &kp RET    ___
             >;
         };
 
         raise {
             bindings = <
-&kp PSCRN  &kp LBRC  &kp LT    &kp GT    &kp RBRC              &kp BSPC    &kp HOME    &kp PG_DN     &kp PG_UP     &kp DELETE
+&kp PSCRN  &kp LBRC  &kp LT    &kp GT    &kp RBRC              &kp BSPC    &kp HOME    &kp PG_DN     &kp PG_UP     &kp DEL
 XXX        &kp LBKT  &kp LPAR  &kp RPAR  &kp RBKT              XXX         &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT
 &kp ESC    XXX       &kp FSLH  &kp BSLH  &kp PIPE              &kp C_PLAY  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
                                ___       ___       ___    ___  ___         XXX         ___
