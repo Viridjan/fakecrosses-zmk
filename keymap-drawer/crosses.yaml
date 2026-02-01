@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - '&hml LCTRL A'
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - '&hml LGUI D'
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - '&hmr LGUI K'
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {h: '$$mdi:apple-keyboard-command$$'}
+  - '&hmr LCTRL SQT'
   - {t: '`', s: '~'}
   - Z
   - X
@@ -29,8 +29,8 @@ layers:
   - B
   - N
   - M
-  - {t: ',', s: ;}
-  - {t: ., s: ':'}
+  - '&kp_cs'
+  - '&kp_pc'
   - $$mdi:keyboard-tab$$
   - lower
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -48,16 +48,16 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '-', s: _}
-  - {t: F6, h: '$$mdi:apple-keyboard-command$$'}
+  - '&hml LCTRL F6'
   - {t: F7, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: F8, h: '$$mdi:apple-keyboard-control$$'}
+  - '&hml LGUI F8'
   - {t: F9, h: '$$mdi:apple-keyboard-shift$$'}
   - F10
   - '?'
   - {t: '4', h: '$$mdi:apple-keyboard-shift$$', s: $}
-  - {t: '5', h: '$$mdi:apple-keyboard-control$$', s: '%'}
+  - '&hmr LGUI N5'
   - {t: '6', h: '$$mdi:apple-keyboard-option$$', s: ^}
-  - {t: '9', h: '$$mdi:apple-keyboard-command$$', s: (}
+  - '&hmr LCTRL N0'
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -185,13 +185,3 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [6, 7]
-  k: $$mdi:mouse-left-click-outline$$
-  l: [base]
-- p: [7, 8]
-  k: $$mdi:mouse-right-click-outline$$
-  l: [base]
-- p: [8, 9]
-  k: $$mdi:mouse-scroll-wheel$$
-  l: [base]
