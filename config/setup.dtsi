@@ -1,4 +1,4 @@
-\\ none & trans alias
+\\ none and trans alias
 #define XXX &none
 #define ___ &trans
 
