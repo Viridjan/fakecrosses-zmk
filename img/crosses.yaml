@@ -1,0 +1,187 @@
+layout: {zmk_keyboard: crosses}
+layers:
+  base:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '&hml LCTRL A'
+  - '&hml LALT S'
+  - '&hml LGUI D'
+  - '&hml LSHIFT F'
+  - G
+  - H
+  - '&hmr LSHIFT J'
+  - '&hmr LGUI K'
+  - '&hmr LALT L'
+  - '&hmr LCTRL SQT'
+  - '`'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - '&kp_cs'
+  - '&kp_pc'
+  - TAB
+  - lower
+  - '&td_shift'
+  - RET
+  - {t: SPACE, h: raise}
+  - '&td_game'
+  lower:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - '&hml LCTRL F6'
+  - '&hml LALT F7'
+  - '&hml LGUI F8'
+  - '&hml LSHIFT F9'
+  - F10
+  - '?'
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - PSCRN
+  - ''
+  - ''
+  - F11
+  - F12
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '='
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  raise:
+  - '{'
+  - <
+  - '>'
+  - '}'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&hml LCTRL LBKT'
+  - '&hml LALT LPAR'
+  - '&hml LGUI RPAR'
+  - '&hml LSHIFT RBKT'
+  - ''
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - PSCRN
+  - \
+  - /
+  - '|'
+  - ''
+  - PP
+  - PREV
+  - VOL DN
+  - VOL UP
+  - NEXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  game:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ''''
+  - LCTRL
+  - LSHIFT
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - TAB
+  - lower_game
+  - SPACE
+  - RET
+  - {t: ▽, type: trans}
+  - {t: base, h: toggle}
+  lower_game:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - DEL
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - ''
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - ESC
+  - LALT
+  - ''
+  - F11
+  - F12
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - '='
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
