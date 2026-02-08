@@ -1,3 +1,4 @@
+
 layout:
   qmk_keyboard: corne_rotated
   layout_name: LAYOUT_split_3x5_3
@@ -21,9 +22,9 @@ layers:
     - [$$mdi:keyboard-tab$$, {h: LOWER}, $$mdi:keyboard-space$$]
     - [t: $$mdi:keyboard-return$$, null, {t: BASE}]
 combos:
-  - {p: [0, 1], k: $$mdi:keyboard-esc$$, l: ["BASE"], a: top}
-  - {p: [1, 2], k: $$mdi:backspace-outline$$, l: ["BASE"], a: top}
-  - {p: [2, 3], k: $$mdi:backspace-reverse-outline$$, l: ["BASE"], a: top}
-  - {p: [6, 7],   k: $$mdi:mouse-left-click-outline$$, l: ["BASE"], a: top}
-  - {p: [7, 8],   k: $$mdi:mouse-right-click-outline$$, l: ["BASE"], a: top}
-  - {p: [8, 9],   k: $$mdi:mouse-scroll-wheel$$, l: ["BASE"], a: top}
+  - {p: [0, 1], k: $$mdi:keyboard-esc$$, l: ["BASE"], a: top,  offset: 0.3}
+  - {p: [1, 2], k: $$mdi:backspace-outline$$, l: ["BASE"], a: top,  offset: 0.3}
+  - {p: [2, 3], k: $$mdi:backspace-reverse-outline$$, l: ["BASE"], a: top,  offset: 0.3}
+  - {p: [6, 7], k: $$mdi:mouse-left-click-outline$$, l: ["BASE"], a: top,  offset: 0.3}
+  - {p: [7, 8], k: $$mdi:mouse-right-click-outline$$, l: ["BASE"], a: top,  offset: 0.3}
+  - {p: [8, 9], k: $$mdi:mouse-scroll-wheel$$, l: ["BASE"], a: top,  offset: 0.3}
