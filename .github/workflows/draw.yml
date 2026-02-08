@@ -25,6 +25,6 @@ jobs:
       keymap_patterns: "config/crosses.keymap" # path to the keymaps to parse
       config_path: "keymap-drawer/config.yaml" # config file, ignored if it doesn't exist
       output_folder: "img" # path to save produced SVGs
-      extra_keymap_yaml: "crosses:'keymap-drawer/combos.yaml'"
+#      extra_keymap_yaml: "crosses:'keymap-drawer/combos.yaml'"
       commit_message: "chore(draw): keymap"
       fail_on_error: true
