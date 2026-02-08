@@ -1,1 +1,1 @@
-<img src="keymap-drawer/crosses.svg">
+<img src="crosses.svg">
