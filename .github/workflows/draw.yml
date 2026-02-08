@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   draw:
-    uses: viridjan/keymap-drawer/.github/workflows/draw-zmk.yml@dev
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@dev
     permissions:
       contents: write
     with:
